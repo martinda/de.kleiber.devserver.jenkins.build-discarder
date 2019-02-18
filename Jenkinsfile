@@ -12,6 +12,8 @@ pipeline {
     stage ("Build Sources") {
       steps {
         echo 'Do all the build stuff, no Build Discarder filter, so use the default here'
+        // for demo purposes set
+        currentBuild.result = 'UNSTABLE'
       }
     }
 
