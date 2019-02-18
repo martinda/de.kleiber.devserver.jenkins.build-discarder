@@ -13,7 +13,7 @@ pipeline {
       steps {
         echo 'Do all the build stuff, no Build Discarder filter, so use the default here'
         // for demo purposes set
-        currentBuild.result = 'UNSTABLE'
+        script {currentBuild.result = 'UNSTABLE'}
       }
     }
 
